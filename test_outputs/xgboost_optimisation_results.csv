@@ -1,0 +1,11 @@
+metric,default,optimised
+accuracy,0.7692,0.8462
+precision,0.8333,0.8462
+recall,0.9091,1.0
+f1_score,0.8696,0.9167
+roc_auc,0.4545,0.4091
+confusion_matrix_default,,"[[0, 2], [1, 10]]"
+confusion_matrix_optimised,,"[[0, 2], [0, 11]]"
+best_params,,"{'subsample': 0.9, 'n_estimators': 150, 'min_child_weight': 3, 'max_depth': 6, 'learning_rate': 0.15, 'gamma': 0.2, 'colsample_bytree': 1.0}"
+selected_model,,RandomizedSearchCV Optimised
+reason,,Higher F1 score

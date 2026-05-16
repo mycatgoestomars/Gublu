@@ -1,0 +1,19 @@
+metric,value
+accuracy,0.8462
+precision,0.8462
+recall,1.0
+f1_score,0.9167
+roc_auc,0.4091
+confusion_matrix,"[[0, 2], [0, 11]]"
+model_used,RandomizedSearchCV Optimised
+---,--- Feature Importance ---
+energy,0.2557
+time_of_day,0.2443
+failures_last_7,0.1257
+failures_last_3,0.0924
+mood,0.0855
+trigger_tiredness,0.0809
+trigger_argument,0.0586
+trigger_boredom,0.057
+problem,0.0
+env_alone,0.0

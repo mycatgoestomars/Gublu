@@ -1,0 +1,43 @@
+test_name,category,expected,actual,status
+Sad input — sadness is dominant,Emotion Prediction,True,True,PASS
+Happy input — joy is dominant,Emotion Prediction,True,True,PASS
+Angry input — anger is dominant,Emotion Prediction,True,True,PASS
+Emotion output has all required keys,Emotion Prediction,True,True,PASS
+Negation reduces joy and boosts sadness,Emotion Correction,True,True,PASS
+Strong negative phrase boosts sadness,Emotion Correction,True,True,PASS
+Values clamped between 0.0 and 1.0,Emotion Correction,True,True,PASS
+High sadness — high distress,Fuzzy Logic,high distress,high distress,PASS
+High joy — low distress,Fuzzy Logic,low distress,low distress,PASS
+Mixed emotions — moderate distress,Fuzzy Logic,moderate distress,moderate distress,PASS
+All zeros — low distress,Fuzzy Logic,low distress,low distress,PASS
+Direct risk phrase detected,Risk Detection,high,high,PASS
+Safe input — low risk,Risk Detection,low,low,PASS
+Case insensitive risk detection,Risk Detection,high,high,PASS
+Procrastination — focused well = success,Streak System,True,True,PASS
+Procrastination — procrastinated = failure,Streak System,False,False,PASS
+Overspending — no spending = success,Streak System,True,True,PASS
+Isolation — avoided people = failure,Streak System,False,False,PASS
+Default memory has all required keys,Memory Manager,True,True,PASS
+Load Nadia (resilient) profile,API Simulation,200,200,PASS
+Chat — normal message returns reply,API Chat,200,200,PASS
+Chat — happy message is low or moderate distress,API Chat,low/moderate distress,moderate distress,PASS
+Chat — high risk triggers safety response,API Chat,high distress,high distress,PASS
+Dashboard returns all fields,API Dashboard,True,True,PASS
+History returns check-in array,API History,True,True,PASS
+Predictions endpoint returns data,API Predictions,200,200,PASS
+Load Marcus (struggling) profile,API Simulation,Marcus,Marcus,PASS
+Load Lala (recovering) profile,API Simulation,Lala,Lala,PASS
+Same profile produces identical results,Simulation Reproducibility,"streak=3,breaks=7","streak=3,breaks=7",PASS
+Empty state — dashboard returns streak=0,Error Handling,0,0,PASS
+Empty chat message — no crash,Error Handling,True,True,PASS
+ML Accuracy >= 0.50,ML Evaluation,>=0.50,0.7692,PASS
+ML F1 Score >= 0.40,ML Evaluation,>=0.40,0.8696,PASS
+ML ROC-AUC >= 0.40,ML Evaluation,>=0.40,0.4545,PASS
+Marcus has more breaks than Nadia,Simulation Comparison,True,True,PASS
+PSO MSE is comparable to or better than default,PSO Performance,True,True,PASS
+XGBoost default model trains successfully,XGBoost Comparison,True,True,PASS
+RandomizedSearchCV search completes,XGBoost Comparison,True,True,PASS
+Final model F1 >= Default model F1,XGBoost Comparison,F1>=0.8696,0.9167,PASS
+Nadia — predictions load correctly,Simulation Predictions,200,200,PASS
+Marcus — predictions load correctly,Simulation Predictions,200,200,PASS
+Lala — predictions load correctly,Simulation Predictions,200,200,PASS

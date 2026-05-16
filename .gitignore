@@ -1,0 +1,37 @@
+# Gublu Backend git ignore file
+# This file tells Git which private, generated or unnecessary files should not be uploaded
+
+# Keeping environment files private because they can contain API keys
+.env
+.env.local
+.env.production
+
+# Ignoring Python virtual environment folders
+venv/
+env/
+.venv/
+
+# Ignoring Python cache files that are created automatically
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignoring trained ML model files because they can be large and can be recreated
+ml_models/
+*.pkl
+
+# Ignoring memory/data files because they may contain user or test data
+gublu_memory.json
+
+# Ignoring system files created by Mac or Windows
+.DS_Store
+Thumbs.db
+
+# Ignoring editor settings
+.vscode/
+.idea/
+
+# Ignoring generated test result files
+test_results.json
+report.log
+results/
