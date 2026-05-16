@@ -36,4 +36,4 @@ test_results.json
 report.log
 results/
 node_modules/
-emotion_model/
+emotion_model/model.safetensors
