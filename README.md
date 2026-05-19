@@ -4,7 +4,7 @@
 
 Final Year Project · BSc (Hons) Artificial Intelligence · University of Greenwich · 2026
 
-Gublu is a full-stack AI web application that detects, tracks, and models maladaptive coping behaviours using a hybrid multi-model architecture. It combines transformer-based emotion detection, fuzzy logic distress scoring, machine learning behavioural prediction, and GPT-supported conversational journaling into a unified pipeline — going beyond passive self-tracking to deliver proactive, data-driven behavioural insight.
+Gublu is a full-stack AI web application that detects, tracks, and models maladaptive coping behaviours using a hybrid multi-model architecture. It combines transformer-based emotion detection, fuzzy logic distress scoring, machine learning behavioural prediction, and GPT-supported conversational journaling into a unified pipeline - going beyond passive self-tracking to deliver proactive, data-driven behavioural insight.
 
 > **Supported behaviours:** Procrastination · Overspending · Social Isolation
 
